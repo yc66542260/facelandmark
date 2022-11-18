@@ -1,0 +1,46 @@
+#ifndef __RT_AI_FACELANDMARK_MODEL_H
+#define __RT_AI_FACELANDMARK_MODEL_H
+
+/* model info ... */
+
+// model name
+#define RT_AI_FACELANDMARK_MODEL_NAME			"facelandmark"
+
+#define RT_AI_FACELANDMARK_WORK_BUFFER_BYTES	(460800)
+
+#define AI_FACELANDMARK_DATA_WEIGHTS_SIZE		(1493120) //unused
+
+#define RT_AI_FACELANDMARK_BUFFER_ALIGNMENT		(4)
+
+#define RT_AI_FACELANDMARK_IN_NUM				(1)
+
+#define RT_AI_FACELANDMARK_IN_1_SIZE			(240 * 320 * 3)
+#define RT_AI_FACELANDMARK_IN_1_SIZE_BYTES		((240 * 320 * 3) * 4)
+#define RT_AI_FACELANDMARK_IN_SIZE_BYTES		{	\
+	((240 * 320 * 3) * 4) ,	\
+}
+
+#define RT_AI_FACELANDMARK_IN_TOTAL_SIZE_BYTES	((240 * 320 * 3) * 4)
+
+
+#define RT_AI_FACELANDMARK_OUT_NUM				(3)
+
+#define RT_AI_FACELANDMARK_OUT_1_SIZE			(1 * 3160 * 4)
+#define RT_AI_FACELANDMARK_OUT_1_SIZE_BYTES		((1 * 3160 * 4) * 4)
+#define RT_AI_FACELANDMARK_OUT_2_SIZE			(1 * 3160 * 10)
+#define RT_AI_FACELANDMARK_OUT_2_SIZE_BYTES		((1 * 3160 * 10) * 4)
+#define RT_AI_FACELANDMARK_OUT_3_SIZE			(1 * 3160 * 2)
+#define RT_AI_FACELANDMARK_OUT_3_SIZE_BYTES		((1 * 3160 * 2) * 4)
+#define RT_AI_FACELANDMARK_OUT_SIZE_BYTES		{	\
+	((1 * 3160 * 4) * 4) ,	\
+	((1 * 3160 * 10) * 4) ,	\
+	((1 * 3160 * 2) * 4) ,	\
+}
+
+#define RT_AI_FACELANDMARK_OUT_TOTAL_SIZE_BYTES	(((1 * 3160 * 4) * 4) + ((1 * 3160 * 10) * 4) + ((1 * 3160 * 2) * 4))
+
+
+
+#define RT_AI_FACELANDMARK_TOTAL_BUFFER_SIZE		//unused
+
+#endif	//end
